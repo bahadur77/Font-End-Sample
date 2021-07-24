@@ -1,0 +1,584 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* -- This is the css of Nav bar section -- */
+.main_container {
+    position: fixed;
+    z-index: 1000;
+    height: 60px;
+    background: #041e42;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+    right: 0;
+    transition: background .2s;
+    width: 100%;
+    flex-direction: column;
+   
+}
+
+.sub_container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    position: relative;
+
+}
+
+.logo_and_nav_icon_container {
+    display: flex;
+}
+
+.nav_icon_container {
+    padding-right: 8px;
+    padding-left: 8px;
+    height: 44px;
+}
+
+body>div.main_container>div>div.logo_and_nav_icon_container>button {
+    outline: none;
+}
+
+.nav_icon {
+    color: white;
+    border-radius: 50%;
+    height: 44px;
+    width: 44px;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    background: transparent;
+    border-radius: 0;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: inherit;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: inherit;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    text-decoration: none !important;
+    -webkit-transition-duration: .12s;
+    transition-duration: .12s;
+    -webkit-transition-property: background-color, opacity, border-color, color;
+    transition-property: background-color, opacity, border-color, color;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.needebdlogo {
+    width: 80px;
+    height: 20px;
+    position: relative;
+    top: 8px;
+    margin-left: 12px;
+}
+
+.search-area {
+    display: flex;
+    background-color: #fff;
+    height: 36px;
+    margin: 0 auto;
+    min-width: 105px;
+    position: relative;
+    width: 41.18%;
+    z-index: 3;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+body>div.main_container>div>form>button.left-search-area-container {
+    outline: none;
+}
+
+.left-search-area-container {
+    display: inline-block;
+    border-style: none;
+}
+
+.left-search-area-icon {
+    -webkit-box-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: flex;
+    height: 100%;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-decoration: inherit;
+    width: 100%;
+    color: white;
+}
+
+.left-search-area-icon-image {
+    width: 18px;
+    aspect-ratio: auto 18 / 18;
+    height: 18px;
+    max-width: 100%;
+}
+
+.search-field {
+    outline: none;
+    border: none;
+    display: inline-block;
+    overflow: visible;
+    padding: 5px 0 5px 5px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    height: auto;
+    min-width: 0;
+}
+
+body>div.main_container>div>form>button.search-icon-container {
+    outline: none;
+}
+
+.search-icon-container {
+
+    width: 44px;
+    height: 36px;
+    background-color: #ffc220;
+    border-style: none;
+}
+
+.account-and-myitem-container {
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+}
+
+.account-subcontainer {
+    background: #041e42;
+    color: #fff;
+    width: 100%;
+    border-style: none;
+    height: 44px;
+}
+
+.account-subcontainer2 {
+    -webkit-box-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: flex;
+    height: 100%;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-decoration: inherit;
+    width: 100%;
+}
+
+.account-subcontainer3 {
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+}
+
+.account-logo {
+    -webkit-box-align: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.account-logo>img {
+    width: 24px;
+    aspect-ratio: auto 24 / 24;
+    height: 24px;
+    display: inline-flex;
+}
+
+.account-title {
+    margin-left: 7px;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: BogleWeb, Helvetica Neue, Helvetica, Arial, sans-serif;
+    display: inline-flex;
+}
+
+.myitem-container {
+    margin-left: 23px;
+    height: 44px;
+    display: block;
+}
+
+.myitem-subcontainer {
+    display: inline-block;
+    background: #041e42;
+    color: #fff;
+    width: 100%;
+    height: 44px;
+    text-decoration: none;
+}
+
+.myitem-subcontainer2 {
+    -webkit-box-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: flex;
+    height: 100%;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-decoration: inherit;
+    width: 100%;
+}
+
+.myitem-subcontainer3 {
+    display: flex;
+    height: 24px;
+    justify-content: flex-start;
+}
+
+.myitem-subcontainer4 {
+    min-width: 24px;
+    display: inline-flex;
+}
+
+.myitem-subcontainer4>img {
+    max-width: 100%;
+    border-style: none;
+    width: 24px;
+    aspect-ratio: auto 24 / 24;
+    height: 24px;
+}
+
+.myitem-title {
+    color: white;
+    font-size: 14px;
+    margin-left: 7px;
+    font-weight: 400;
+    color: #fff;
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.cart-container {
+    margin-left: 23px;
+    position: relative;
+    align-items: center;
+    display: block;
+    box-sizing: border-box;
+    margin-right: 0;
+    -webkit-box-align: center;
+    width: 31px;
+}
+
+.cart-subcontainer {
+    display: inline-block;
+    background: #041e42;
+    color: #fff;
+    width: 100%;
+    height: 44px;
+    margin: 0;
+    padding: 0;
+}
+
+.count {
+    display: flex;
+    background: #fced70;
+    border-radius: 16px;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    right: -12px;
+    top: 0;
+    width: 20px;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.cart-subcontainer2 {
+    -webkit-box-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: flex;
+    height: 100%;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-decoration: inherit;
+    width: 100%;
+}
+
+.cart-subcontainer3 {
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    display: flex;
+    width: 100%;
+}
+
+.cart-subcontainer4 {
+    display: inline-flex;
+    min-width: 24px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.cart-subcontainer4>img {
+    max-width: 100%;
+    border-style: none;
+    width: 24px;
+    aspect-ratio: auto 24 / 24;
+    height: 24px;
+}
+
+/* -- This is the end of the css of Nav bar section -- */
+
+
+
+/* -- This is the css of Category section -- */
+.category-section {
+    background: #fff;
+    min-height: 112px;
+    color: #000;
+    width: 100%;
+    z-index: 6;
+    margin-top: 60px;
+
+}
+
+.category-container {
+    width: 100%;
+    display: flex;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .16);
+}
+
+.category-subcontainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 1280px;
+    color: #212121;
+    width: 100%;
+}
+
+.category-product {
+    padding: 12px 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.category-product-item {
+    height: 64px;
+    width: 64px;
+    display: inline-flex;
+}
+
+.category-product-item>img {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.category-product-title {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+body>div.category-section>div>div>div:nth-child(1) {
+    padding-left: 30px;
+}
+
+/* -- This is the end of the css of Category section -- */
+
+
+/* this is the start of the css of site menu section --*/
+
+.click-bar-site-menu {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 60px;
+    left: -100%;
+   
+}
+.click-bar-all{
+    width: 320px;
+   transition: all .5s;
+}
+.click-bar-site-menu-active {
+    left: 0;
+    transition: all .5s;
+}
+
+.click-bar-site-menu-container {
+    background-color: #fff;
+    width: 100%;
+    overflow: scroll;
+    height: 100vh;
+    transition: all .5s;
+    overflow-x: hidden;
+}
+
+
+.click-bar-site-menu-top-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #041E42;
+    transition: all .5s;
+}
+
+.click-bar-site-logo img {
+    width: 50px;
+    height: 30px;
+}
+
+.site-menu-close-btn {
+    background-color: transparent;
+    border: none;
+}
+
+.site-menu-close-btn .fa-times {
+    font-size: 40px;
+    color: #fff;
+}
+
+.click-bar-site-menu-bottom {
+    width: 100%;
+    padding: 20px;
+
+}
+
+.web-link {
+    font-size: 18px;
+    font-family: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.click-bar-site-menu-bottom-header {
+
+    padding: 20px 0;
+}
+
+.click-links {
+    appearance: none !important;
+    background: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #000;
+    cursor: pointer;
+    display: block;
+    font-family: inherit;
+    font-size: inherit;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+}
+
+.l-t:hover {
+    text-decoration: underline;
+}
+
+.click-links-row {
+    display: flex;
+    padding: 8px 0;
+    margin: 0;
+    align-items: center;
+}
+
+.link-empty {
+    padding-right: 16px;
+}
+
+.last-empty {
+    padding-left: 16px;
+}
+
+.link-title {
+    font-size: 14px;
+    color: #000;
+    text-transform: capitalize;
+}
+
+.link-right-icon {
+    margin-left: 100px;
+}
+
+.link-right-icon .lg-i {
+    font-size: 20px;
+}
+
+.lg-i-btn {
+    background-color: transparent;
+    border: none;
+}
+
+.click-bar-site-menu-header-department {
+
+    width: 100%;
+    padding: 0 20px;
+}
+
+.department-title {
+    width: 100%;
+}
+
+.department-title-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    line-height: 40px;
+}
+
+.department-name h2 {
+    font-size: 18px;
+}
+
+.all-link a {
+    color: #000;
+
+}
+
+/* department menus */
+
+.departments-menu {
+    width: 100%;
+}
+
+.departments-link {
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    text-align: center;
+    padding: 12px 0;
+}
+
+.departments-link:hover {
+    text-decoration: underline;
+}
+
+.departments-links-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.click-bar-site-header-bottom-link {
+    padding: 30px 20px;
+}
