@@ -3,7 +3,9 @@
     margin: 0;
     padding: 0;
 }
-
+ .clear{
+     clear: both;
+ }
 
 /* -- This is the css of Nav bar section -- */
 .main_container {
@@ -353,7 +355,7 @@ body>div.main_container>div>form>button.search-icon-container {
     align-items: center;
     justify-content: center;
     background-color: #fff;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .16);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .20);
 }
 
 .category-subcontainer {
@@ -423,8 +425,24 @@ body>div.category-section>div>div>div:nth-child(1) {
     transition: all .5s;
     overflow-x: hidden;
 }
-
-
+.click-bar-site-menu-container::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  .click-bar-site-menu-container::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  .click-bar-site-menu-container::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  .click-bar-site-menu-container::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 .click-bar-site-menu-top-row {
     width: 100%;
     display: flex;
@@ -438,7 +456,7 @@ body>div.category-section>div>div>div:nth-child(1) {
 }
 
 .click-bar-site-logo img {
-    width: 50px;
+    width: 52px;
     height: 30px;
 }
 
@@ -460,7 +478,7 @@ body>div.category-section>div>div>div:nth-child(1) {
 
 .web-link {
     font-size: 18px;
-    font-family: 600;
+   font-weight: bold;
     margin: 0;
     padding: 0;
 }
