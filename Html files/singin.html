@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sing in</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="/Css files/style.css">
+</head>
+<body>
+
+     <!-- ----------This is the start of form-section----------------->
+    <div class="form-section">
+        <div class="form-main">
+            <div class="singin-title">
+                <h2>Sign in to your Neede account</h2>
+            </div>
+            <form action="/Html files/index.html" class="form-box" id="sing-in-form"  name="form"  onsubmit="return validated()" method="post">
+                <div class="input-section">
+                   <input type="email" placeholder="Email address (required)" name="email" autocomplete="off">
+                   <div class="email-error">
+                       Enter your email address
+                   </div>
+                </div>
+                <div class="input-section">
+                   <input type="password" placeholder="password" name="password">
+                   <div class="password-error">
+                    Enter your password 
+                </div>
+                </div>
+                <div class="forgot-pass-section">
+                    <a href="/Html files/forgot.html">forgot password?</a>
+                </div>
+                <div class="submit-section">
+                   <button class="submit-btn">sing in</button>
+                </div>  
+            </form>
+            <div class="crate-account-section">
+                <h2>Don't you have an account</h2>
+
+               <a href="/Html files/account.html">
+                   <button class="crate-account">Create account</button>
+               </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------This is the end of form-section----------------->
+
+   <!-- ----------This is the start of the account footer----------------->
+
+    <div class="account-footer-section">
+        <div class="account-footer-section-main">
+            <ul class="account-footer-section-link">
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">return policy</a></li>
+                <li><a href="#">terms of use</a></li>
+                <li>&copy; 2021 NeedeBD.com</li>
+                <li><a href="#">security</a></li>
+                <li><a href="#">site map</a></li>
+                <li><a href="#" >contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+ <!-- ----------This is the end of the account footer----------------->
+
+    <script src="/js flies/singIn.js"></script>
+</body>
+</html>

@@ -95,3 +95,18 @@ function autoPlay(){
 }
 let timer =setInterval(autoPlay,6000);
 //---------- This is the end of slider java scripts----------------//
+
+
+//---------- This is the start of account dropdown java scripts----------------//
+
+const accountButton = document.querySelector('.account-subcontainer')
+const accountCloseButton = document.querySelector('.close-account-btn')
+const accountDropDown = document.querySelector('.account-dropdown-main')
+
+accountButton.addEventListener('click', function(){
+    accountDropDown.classList.add('account-dropdown-main-active')
+})
+accountCloseButton.addEventListener('click', function(){
+    accountDropDown.classList.remove('account-dropdown-main-active')
+})
+

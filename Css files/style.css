@@ -19,7 +19,7 @@ body {
 /* -------------navigation section----------  */
 .main_container {
     position: fixed;
-    z-index: 1000;
+    z-index: 100;
     height: 60px;
     background: #041e42;
     left: 0;
@@ -684,13 +684,13 @@ body>div.main_container>div>form>button.search-icon-container {
     max-width: 1900px;
     margin-bottom: 20px;
 }
-body > div:nth-child(8) > div.body-category-maindiv > div:nth-child(1){
+body > div:nth-child(8) > div.body-category-maindiv > div:nth-child(1),div:nth-child(7) > div:nth-child(2) > div:nth-child(1){
     padding-left: 0;
 }
 body > div:nth-child(8) > div.body-category-maindiv > div:nth-child(4){
     padding-right: 0;
 }
-    
+   
 
 
 .body-category-container {
@@ -1192,3 +1192,377 @@ body > div:nth-child(6) > div.extra-option-maindiv > div > ul > li:last-child{
     color: #ffff;
     font-size: 14px;
 }
+
+/*------------------- This is the start of the account dropdown section -------------*/
+#main-dorpdown{
+    z-index: 111;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.account-dropdown-main{
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    display: none;
+}
+.account-dropdown-main-active{
+    display: block;
+}
+.account-dropdown{
+    background-color: rgba(0, 0, 0, .16);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+.account-dropdown-content{
+    position: absolute;
+    width: 320px;
+    height: 100%;
+    background-color: #ffff;
+    right: 0;
+    overflow: auto;
+    overflow-x: hidden;
+    top:60px;
+   
+    padding: 20px;
+  
+}
+.account-dropdown-top{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.account-row{
+    width: 100%;
+    display: flex;
+}
+.account-img{
+    background-color: #031937;
+    height: 44px;
+    width: 44px;
+    text-align: center;
+    align-items: center;
+    line-height: 44px;
+    border-radius: 50%;
+
+}
+.account-img img{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+.account-title h2{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.close-section .close-account-btn{
+    background-color: transparent;
+    border: none;
+    margin-top: 10px;
+}
+
+.all-elements-link{
+  width: 100%;
+  padding: 20px 0;
+}
+.elements{
+    display: block;
+   text-decoration: none;
+    color: #000;
+    padding: 8px 0;
+}
+.elements-row{
+    display: flex;
+    padding: 8px 0;
+}
+.elements-name{
+    padding-left: 16px;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.elements-name:hover{
+    text-decoration: underline;
+}
+
+/*------------------- This is the end of the account dropdown section -------------*/
+
+/*------------------- This is the start of sing in section -------------*/
+
+.form-section{
+    padding: 50px;
+}
+.singin-title{
+    width: 100%;
+    padding: 20px 0;
+}
+.singin-title h2{
+    font-size: 18px;
+    font-weight: 500;
+}
+.input-section{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.input-section input{
+    width: 100%;
+    padding: 15px;
+    border:1px solid rgba(0, 0, 0,)
+}
+.input-section input:focus{
+    outline: none;
+}
+.email-error, .password-error{
+    width: 100%;
+    padding: 5px 0;
+    color: red;
+    display: none;
+}
+.forgot-pass-section{
+    width: 100%;
+    text-align: right;
+    margin: 0;
+}
+.forgot-pass-section a{
+   margin-top: -4px;
+    color: #000;
+}
+.submit-section{
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+.submit-section .submit-btn{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #041E42;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+.crate-account-section{
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+.crate-account-section h2{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 0;
+}
+.crate-account-section a{
+    width: 100%;
+    display: block;
+    text-decoration: none;
+}
+.crate-account-section a .crate-account{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid black;
+    background-color: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@media  screen and (min-width: 240px) {
+    .form-main{
+      width: 320px;
+       margin-left: auto;
+       margin-right: auto;
+       overflow: hidden;
+       padding: 20px;
+      
+    }
+}
+
+/*------------------- This is the end of sing in section -------------*/
+
+/*------------------- This is the start forgot pass section -------------*/
+@media  screen and (min-width: 240px) {
+    .forgot-main{
+      width: 320px;
+       margin-left: auto;
+       margin-right: auto;
+       overflow: hidden;
+       /* padding:90px 20px; */
+       padding-left: 20px;
+       padding-right: 20px;
+       padding-top: 58px;
+       padding-bottom: 140px;
+      
+    }
+}
+
+.forgot-section{
+    width: 100%;
+    margin-top: 100px;
+}
+.forgot-title{
+    width: 100%;
+    text-align: center;
+}
+.forgot-title h2{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding: 5px 0;
+    color: #000;
+}
+.forgot-main .forgot-pass-main{
+   width: 100%;
+}
+.forgot-main .forgot-pass-main .forgot-input{
+    width: 100%;
+}
+.forgot-main .forgot-pass-main .forgot-input input[type=email]{
+    width: 100%;
+    padding: 15px;
+}
+.forgot-button-section{
+    width: 100%;
+    padding: 15px 0;
+    margin: 25px 0;
+}
+.forgot-button-section .forgot-submit-btn{
+    width: 100%;
+    padding: 15px;
+    background-color: #041e42;
+    border: none;
+    outline: none;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.back-to-singin{
+    width: 100%;
+    text-align: center;
+}
+.back-to-singin span a{
+    color: #000;
+}
+
+
+/*------------------- This is the end forgot pass section -------------*/
+
+/*------------------- This is the start account section -------------*/
+
+.create-account-section-m{
+    width: 100%;
+    padding: 40px 0;
+}
+.form-account{
+    width: 100%;
+}
+.form-account h2{
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+.form-control{
+    width: 100%;
+    padding: 10px 0;
+}
+.form-control small{
+    display: block;
+    color: red;
+    visibility: hidden;
+
+}
+.form-control input{
+   width: 100%;
+   padding: 15px;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+.form-control.error input {
+  border-color: red;
+}
+.form-control.success input {
+  border-color:red;
+}
+.account-create-btn{
+    width: 100%;
+    padding:15px;
+    border: none;
+    outline: none;
+    background-color: #041e42;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form-account h3{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 0;
+}
+.form-account a{
+    display: block;
+    width: 100%;
+    border: 1px solid #041e42;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #041e42;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+@media  screen and (min-width: 240px) {
+    .account-main{
+      width: 320px;
+       margin-left: auto;
+       margin-right: auto;
+       overflow: hidden;      
+    }
+}
+  /*------------------- This is the end account/registration section -------------*/
+
+
+    /*------------------- This is the start account footer section -------------*/
+    .account-footer-section{
+        margin-left: 20px;
+        margin-right: 20px;
+        border-top: 2px solid #041e42;
+        padding: 20px 0;
+    }
+    
+    .account-footer-section-link{
+        list-style: none;
+        display: flex;
+        overflow: hidden;
+        justify-content: space-between;
+      
+    }
+    .account-footer-section-link li a{
+       text-decoration: none;
+       color: #000;
+       text-transform: capitalize;
+    }
+    .account-footer-section-link li a:hover{
+        text-decoration: underline;
+       
+    }
+
+
+
+
+
