@@ -1618,24 +1618,21 @@ body > div:nth-child(6) > div.extra-option-maindiv > div > ul > li:last-child{
   max-width: 100%;
   width: calc(100% + 16px);
   display: flex;
-  flex-flow:row wrap;
+  flex-flow: wrap;
   overflow: auto;
-  
- 
-  
-  
+  justify-content: center;
 }
 .product-col{
    
-    width: 23.4%;
+    width: 239px;
     border-radius: 8px;
     overflow: hidden;
-    margin-right: 16px;
+    margin-right: 20px;
     background-color: #fff;
     height: auto;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 .product-col:last-child{
     border-right: 0;
@@ -1945,9 +1942,15 @@ text-align: justify;
 
    /*============ this is the Single product page Start  =============*/
 
+
+    /*------------------- This is the start single product page section pagination -------------*/
+
   .single-product-cart-section{
       width: 97%;
-      margin: 0 auto;
+      margin: 10px auto;
+      border-bottom: 2px solid #041e42;
+      border-bottom-width: 1px;
+      padding-bottom: 20px;
      
   }
   .single-product-cart-main{
@@ -1966,10 +1969,54 @@ text-align: justify;
   }
   .single-product-cart-image img{
     width: 100%;
+    
+    vertical-align: top;
 }
+.single-product-cart-button{
+    width: 100%;
+    display: flex;
+    margin: 10px 0;
+}
+.add-cart-btn{
+    width: 50%;
+    margin-right: 10px;
+
+}
+.cart-btn{
+    width: 100%;
+    padding: 10px 0;
+    background-color: #ffc220;
+    border: none;
+    outline: none;
+    color: #0F1111;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.buy-btn{
+    width: 100%;
+    padding: 10px 0;
+    background-color: #041e42;
+    border: none;
+    outline: none;
+    color: #ffff;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.buy-cart-btn{
+    width: 50%;
+}
+ 
+
+
 
 .single-product-cart-right{
     width: 60%;
+    padding: 0 20px;
 }
 .single-product-cart-details{
     width: 100%;
@@ -1982,13 +2029,15 @@ text-align: justify;
 .single-product-cart-title h1{
     font-size: 24px;
     color:#0F1111;
+    line-height: 2rem;
    
 }
 .single-product-cart-details .s-p-rating{
-    padding: 10px 5px;
-    width: 1005;
+    padding: 10px 10px;
+    width: 100%;
     display: flex;
    border-bottom: 1px solid #041e42;
+   border-bottom-width: 0;
 }
 .single-product-cart-details .s-p-rating .fa-star{
     color: #ffc220;
@@ -2008,11 +2057,14 @@ text-align: justify;
 .rating-count a:hover{
     color: red;
 }
-
+.p-size{
+    width: 100%;
+   display: flex;
+}
 .s-p-price{
     padding: 10px 5px;
     display: flex;
-    border-bottom: 1px solid #041e42;
+   
 }
 .s-p-price .price-name{
     margin-right: 10px;
@@ -2022,3 +2074,116 @@ text-align: justify;
     color: #041e42;
     font-weight: bold;
 }
+.color-size{
+    width: 100%;
+    padding: 0 5px;
+}
+.color-size-form{
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.p-size-text{
+  
+    padding: 3px 0;
+}
+.size-button{
+    width: 100%;
+    padding: 5px 0;
+}
+.size-button-btn{
+    text-decoration: none;
+    color: #0F1111;
+    padding: 3px 10px;
+    margin-right: 5px;
+    border-radius: 8px;
+    background: transparent;
+    cursor: pointer;
+}
+.size-button-btn:hover{
+    background-color: #041e42;
+    color: #ffff;
+}
+.size-button .chart{
+    text-decoration: none;
+    color: #041e42;
+    margin-left: 10px;
+}
+.size-button .chart:hover{
+    color: red;
+    text-decoration: underline;
+}
+.variation-color-name{
+    width: 100%;
+   margin: 10px 0;
+}
+.color-text{
+    color: #0F1111;
+}
+.color-name-row{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.color-name-row li{
+    margin-right: 5px;
+    margin-top: 20px;
+    
+}
+.color-name-row li .color-name{
+ padding: 12px 20px;
+   cursor: pointer;
+}
+.product-all-details{
+    width: 100%;
+}
+.product-all-details .a-unorder-list{
+    margin: 0 0 0 18px;
+    
+}
+ 
+
+/*------------------- This is the start product description section pagination -------------*/
+.product-description{
+    width: 97%;
+    margin:  20px auto;
+}
+.product-description-title{
+    padding: 10px 0;
+}
+.product-description-title h2{
+   font-size: 24px;
+}
+.product-description-main{
+    margin-left: 20px;
+}
+.product-description-main .details-feature{
+    list-style: none;
+}
+.details-feature .feature{
+    width: 100%;
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.details-feature .feature .bold{
+    font-weight: bold;
+}
+
+
+ /*------------------- This is the start related product section -------------*/
+
+ .related-product{
+     width: 97%;
+     margin: 20px auto;  
+ }
+ .related-product-title{
+     width: 100%;
+     padding: 10px 0 30px 0;
+ }
+ .related-product-main{
+     width: 100%;
+     display: flex;
+     flex-flow: wrap;
+     justify-content: space-around;
+ }
